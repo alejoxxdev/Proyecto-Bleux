@@ -11,6 +11,7 @@ body {
     background-color: #f8f9fa;
 }
 
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -50,6 +51,7 @@ body {
     font-weight: 500;
 }
 
+/* === SECCIÓN HERO === */
 .cuerpo {
     position: relative;
     background-color: rgb(25, 19, 42);
@@ -139,6 +141,7 @@ body {
     margin-bottom: -150px;
 }
 
+/* === SECCIÓN FUNCIONALIDADES === */
 .cuerpo2 {
     padding: 100px 8% 50px;
     background-color: #f8f9fa;
@@ -318,6 +321,7 @@ body {
     color: white;
 }
 
+/* === FOOTER === */
 footer {
     display: flex;
     justify-content: space-between;
@@ -343,22 +347,42 @@ footer {
 }
 
 
-/* TABLET (Hasta 992px) */
-@media (max-width: 992px) {
-    .menu ul {
-        display: none;
+/* Pantallas Laptops  (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .menu {
+        padding: 15px 5%;
     }
-    
+
+    .hero-container, .cuerpo2, .contenido4, footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .apartado h1 {
+        font-size: 50px;
+    }
+
+    .imagen2 img {
+        margin-bottom: -100px;
+    }
+
+    .caja {
+        padding: 30px 20px;
+    }
+}
+
+/*Tablets(max-width: 992px) */
+@media (max-width: 992px) {
     .hero-container {
         flex-direction: column;
         text-align: center;
-        padding-top: 50px;
+        padding-top: 60px;
     }
 
     .bg-img-container {
         width: 100%;
         height: 50%;
-        opacity: 0.3; 
+        opacity: 0.3;
     }
 
     .apartado {
@@ -375,7 +399,22 @@ footer {
     }
 
     .imagen2 img {
-        margin-bottom: -50px;
+        margin-bottom: -60px;
+    }
+
+    .contenido2 {
+        gap: 30px;
+    }
+
+    .cajas {
+        gap: 20px;
+    }
+}
+
+/*  Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .menu ul {
+        display: none;
     }
 
     .contenido2 {
@@ -401,20 +440,32 @@ footer {
     .caja {
         width: 80%;
     }
+
+    .header-precios h2 {
+        font-size: 38px;
+    }
 }
 
-/* MOBILE (Hasta 576px) */
-@media (max-width: 576px) {
+/*Telefonos moviles (max-width: 480px) */
+@media (max-width: 480px) {
     .apartado h1 {
-        font-size: 40px;
+        font-size: 38px;
     }
-    
-    .header-precios h2 {
-        font-size: 35px;
+
+    .apartado p {
+        font-size: 16px;
     }
 
     .botones {
         flex-direction: column;
+    }
+
+    .imagen2 {
+        width: 85%;
+    }
+
+    .titulo-seccion {
+        font-size: 35px;
     }
 
     .caja {
@@ -426,7 +477,7 @@ footer {
         gap: 20px;
         text-align: center;
     }
-    
+
     br {
         display: none;
     }
